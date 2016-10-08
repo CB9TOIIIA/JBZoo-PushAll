@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<element type="element" group="Core" core="false" hidden="false">
+    <name>PushALL</name>
+    <author>CB9TOIIIA</author>
+    <creationDate>2015</creationDate>
+    <copyright>Copyright (C)</copyright>
+    <authorEmail>cb9toiiia@gmail.com</authorEmail>
+    <authorUrl>http://cb9t.ru</authorUrl>
+    <version>1.0</version>
+    <description>PushAll: Ограничения Self API: нельзя отправлять более одного уведомления чаще чем раз в 3 секунды
+Нельзя отправлять дубликаты уведомления содержащие одинаковые заголовок и текст чаще чем раз в 10 минут.</description>
+
+    <params>
+
+        <param name="titlepush" type="text" default="" label="Name Push"
+               description="заголовок Push-уведомления"/>
+
+        <param name="subject" type="jbordermacros" default="" label=""
+               description="основной текст Push-уведомления"/>
+
+        <param name="id" type="text" default="" label="id"
+               description="номер вашей подписки в случае с self - ваш айди"/>
+
+        <param name="key" type="text" default="" label="key"
+               description="key - ключ вашей подписки, или ключ безопасности для отправки Push себе"/>
+
+        <param name="icon" type="text" default="" label="icon"
+               description="иконка уведомления (необязательно)"/>
+
+        <param name="url" type="text" default="" label="url"
+               description="адрес по которому будет осуществлен переход по клику (не обязательно)"/>
+
+        <param name="hidden" type="text" default="" label="hidden"
+               description="1 - сразу скрыть уведомление из истории пользователей, 2 - скрыть только из ленты, 0 - не скрывать (по-умолчанию 0)"/>
+
+        <param name="priority" type="text" default="" label="priority"
+               description="приоритет. 0 - по по-умолчанию. -1 - не важные, менее заметны. 1 - более заметные"/>
+
+
+    </params>
+
+</element>
